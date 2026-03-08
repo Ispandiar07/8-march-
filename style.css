@@ -1,0 +1,90 @@
+body{
+
+margin:0;
+height:100vh;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+font-family:Arial;
+text-align:center;
+
+color:white;
+overflow:hidden;
+
+background:linear-gradient(135deg,#ff9ecf,#ffc3e0,#ffd8f0);
+background-size:400% 400%;
+
+animation:bgMove 12s ease infinite;
+
+}
+
+@keyframes bgMove{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+h1{
+
+font-size:34px;
+
+}
+
+#text{
+
+font-size:20px;
+max-width:85%;
+line-height:1.6;
+
+}
+
+.hint{
+
+margin-top:20px;
+opacity:0.8;
+
+}
+
+.heart{
+
+position:absolute;
+font-size:22px;
+
+animation:float 6s linear infinite;
+
+}
+
+@keyframes float{
+
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-10vh);}
+
+}
+
+.flower{
+
+position:absolute;
+font-size:26px;
+
+animation:grow 1.5s forwards;
+
+}
+
+@keyframes grow{
+
+0%{
+transform:scale(0);
+opacity:0;
+}
+
+100%{
+transform:scale(1.2);
+opacity:1;
+}
+
+}
